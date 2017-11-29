@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="plugins/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	
+</head>
+<body>
+	<header id="header">
+		<h1>用户管理系统</h1>
+		<ul class="nav1">
+			<li><a href="#" class="a">退出</a></li>
+			<li><a href="#" class="a">帮助</a></li>
+		</ul>	
+	</header>
+	<div class="center">
+		<aside id="left">
+			<ul class="menu">
+				<li><a href="userAction!listUser">用户查询</a></li>
+				<li><a href="userAction!to_edit">用户新增</a></li>
+			</ul>
+			<div class="avatar">
+				<img src="images/avatar.png" />
+				<h5>当前登录用户</h5>
+			</div>
+		</aside>
+		<div class="rigth-container">
+			<div id="right">
+				<div class="toolbar">
+					<form action="userAction!listUser" method="post">
+						<label for="name">用户名称:</label>
+						<input type="text" id="name">
+						<button type="submit">查询</button>
+					</form>
+				</div>
+				<table class="table">
+					<thead>
+						<tr>
+							<td><input type="checkbox" id="clickall">用户名称</td>
+							<td>职业</td>
+							<td>邮箱</td>
+							<td>性别</td>
+							<td>特长</td>
+							<td>操作</td>
+						</tr>
+					</thead>
+					<tr>
+						<td class="td1"><input type="checkbox" name="">轻实训</td>
+						<td>学生</td>
+						<td>tiger@shixun.online</td>
+						<td>男</td>
+						<td>书法、乐器</td>
+						<td>编辑 <span>删除</span></td>
+					</tr>
+					<tr>
+						<td class="td1"><input type="checkbox" name="">王宇宙</td>
+						<td>程序猿</td>
+						<td>mike@qingshixun.com</td>
+						<td>男</td>
+						<td>运动</td>
+						<td>编辑 <span>删除</span></td>
+					</tr>
+					<tr>
+						<td class="td1"><input type="checkbox" name="">张丽丽</td>
+						<td>UI设计</td>
+						<td>jessie@google.com</td>
+						<td>女</td>
+						<td>音乐</td>
+						<td>编辑 <span>删除</span></td>
+					</tr>
+				</table>
+				</div>
+			<footer id="footer">Copyright 2017轻实训版权所有</footer>
+		</div>
+	</div>
+	
+</body>
+</html>

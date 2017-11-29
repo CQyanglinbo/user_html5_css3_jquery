@@ -1,0 +1,248 @@
+@font-face{
+	font-family: '华文行楷';
+	src:local('华文行楷'),url('fonts/华文行楷.ttf')format('truetype');
+}
+.div{
+	font-family: '华文行楷';
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+ul,li,a{
+	list-style: none;
+}
+header{
+	width: 100%;
+	height:80px;
+	background-color: #484E59;
+	display: flex;
+	flex-direction: row;
+	/* 对齐方式,两边对齐 */
+	justify-content: space-between;
+}
+header h1{
+	font-family: '华文行楷';
+	color:#FFFEFD;
+	width:300px;
+	height: 80px;
+	background:url(../images/logo.png) no-repeat;
+	background-size:80px; 
+	margin:0px 10px;
+	padding-left:80px; 
+    line-height: 80px;
+}
+header .nav1{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	line-height: 80px;
+    margin: 0px 20px;
+}
+header ul li>a{
+	list-style: none;
+	text-decoration:blink;
+	padding-right: 10px;
+	font-size: 20px; 
+	color:white;
+}
+.center{
+	width: 100%;
+	min-height: 500px;
+	min-width: 1349px;
+	/* height:87.5%; */
+	display: flex;
+	flex-direction: row;
+	
+}
+/* 左边导航栏 */
+#left{
+	width: 15%;
+	height:100%;
+	background-color: #EFF0EF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#left ul{
+	padding:0;
+	margin: 20px 10px;
+}
+#left ul li{
+	padding:10px 20px;
+	text-align: center;
+	border: solid 1px gray;
+	border-left: solid 8px gray;
+}
+#left ul li:hover{
+	background-color: #C3C3C3;
+}
+#left ul li a{
+	text-decoration: none;
+	color:#7A7773;
+}
+.avatar{
+	width:100%;
+	text-align: center;
+
+}
+#left .avatar img{
+	width:100px;
+	height:80px;
+	border-radius:50%;
+	border: solid 1px gray;
+	margin:auto;
+}
+/* 右边主体 */
+.rigth-container{
+	width: 85%;
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	
+}
+#right{
+	width: 100%;
+	height:95%;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	
+}
+/* 新增编辑用户信息 */
+#right h3{
+	text-align: center;
+	margin:0;
+}
+.input_form{
+	width: 95%;
+	text-align:left;
+	padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+.input_form .up{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+#upload img{
+	width: 200px;
+	height: 200px;
+	border-radius: 15%;
+	border: solid 1px gray;
+	margin-top: 15px;
+}
+/* 上傳按鈕 */
+#upload #upload_button{
+	width: 200px;
+	height: 25px;
+	background-color: #ffffff;
+	border: solid 1px gray;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: -22px;
+}
+
+#upload input{
+	display: inline;
+	z-index: 1;
+	width:200px;
+	margin-top: 2px;
+	opacity: 0;
+}
+.input_container{
+	width: 60%;
+}
+.input{
+	width:80%;
+	height:25px;
+	font-size:14px;
+	margin-top: 15px;
+}
+.input_select{
+	width:40%;
+	height:80px;
+	font-size:14px;
+	margin-top: 15px;
+}
+.input_lable{
+	width:68px;
+	text-align: right;
+}
+.input_form .sex{
+	margin-top:15px;
+}
+/* button样式 */
+.input_form .button{
+	text-align: center;
+}
+.button #save{
+	width: 60px;
+	height:30px;
+	background-color: #56B85A;
+	border:0;
+	color: white;
+	margin-right: 10px;
+}
+.button #reset{
+	width: 60px;
+	height:30px;
+	background-color: #0296C2;
+	border:0;
+	color: white;
+	margin-right: 10px;
+}
+.button #back{
+	width: 60px;
+	height:30px;
+	background-color: #C7C8C7;
+	border:0;
+	color: white;
+}
+/* userlist页面样式 */
+.toolbar{
+	text-align:left;
+	margin:20px;
+}
+.toolbar input{
+	margin-right: 10px;
+	height:20px;
+}
+.toolbar button{
+	width:80px;
+	height:25px;
+}
+.table{
+	width:97%;
+	margin:0 15px;
+	border:solid 1px #DDDDDD;
+	border-collapse:collapse;
+}
+.table tr{
+	width:100%;
+	line-height:35px;
+}
+.table tr:hover{
+	background:#fafafa;
+}
+.table thead{
+	background:#eee;
+}
+.table tr td{
+	border:1px solid #ddd
+}
+.table tr td input{
+	margin:10px;
+}
+/* 底部 */
+footer{
+	width:100%;
+	height: 5%;
+	background-color: #ffffff; 
+	text-align: center;
+	margin: 0px;
+}

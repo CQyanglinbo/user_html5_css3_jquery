@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="plugins/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	
+</head>
+<body>
+	<header id="header">
+		<h1>用户管理系统</h1>
+		<ul class="nav1">
+			<li><a href="#" class="a">退出</a></li>
+			<li><a href="#" class="a">帮助</a></li>
+		</ul>	
+	</header>
+	<div class="center">
+		<aside id="left">
+			<ul class="menu">
+				<li><a href="userAction!listUser">用户查询</a></li>
+				<li><a href="userAction!to_edit">用户新增</a></li>
+			</ul>
+			<div class="avatar">
+				<img src="images/avatar.png" />
+				<h5>当前登录用户</h5>
+			</div>
+		</aside>
+		<div class="rigth-container">
+			<div id="right">
+				<h3>新增&编辑用户信息</h3>
+				<form class="input_form">
+					<div class="up">
+						<div class="input_container">
+							<div>
+								<label class="input_label">用户名称:</label>
+								<input type="text" class="input" placeholder="请输入您的用户名！">
+							</div>
+
+							<div>
+								<label class="input_label">登录密码:</label>
+								<input type="password" class="input" placeholder="请输入您的密码!">
+							</div>
+							<div>
+								<label class="input_label">重复密码:</label>
+								<input type="password" class="input" placeholder="请输入您的确认密码!">
+							</div>
+							<div>
+								<label class="input_label">电子邮箱:</label>
+								<input type="email" class="input" placeholder="请输入您的邮箱!">
+							</div>
+							<div>
+								<label class="input_label">出生日期:</label>
+								<input type="date" class="input" placeholder="请选择您的出生日期">
+							</div>
+							<div class="sex">
+								<label class="input_label">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+								<input type="radio" name="sex">男
+								<input type="radio" name="sex">女
+							</div>
+							<div>
+								<label class="input_label">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业:</label>
+								<select class="input">
+  									<option value="student">学生</option>
+  									<option value="teacher">老师</option>
+  									<option value="eniger">工程师</option>
+  									<option value="worker">工人</option>
+								</select>
+							</div>
+							<div>
+								<label class="input_label">爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好:</label>
+								<select multiple="multiple" size="4" class="input_select">
+									<option >书法</option>
+  									<option >乐器</option>
+  									<option >运动</option>
+  									<option >编程</option>
+								</select>
+							</div>
+						</div>
+						<div id="upload">
+							<img src="images/upload.png"><br>
+							<input type="file" name="">
+							<div id="upload_button">上传头像</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="button">
+						<hr>
+						<button type="submit" value="保存" id="save">保存</button>
+						<button type="reset" value="重置" id="reset">重置</button>
+						<button type="button" value="返回" id="back">返回</button>
+					</div>
+					
+				</form>
+			</div>
+			<footer id="footer">Copyright 2017轻实训版权所有</footer>
+		</div>
+	</div>
+	
+</body>
+</html>
